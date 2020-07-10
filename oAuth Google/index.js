@@ -10,10 +10,10 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 app.use(session({ secret: "supersecret", resave: true, saveUninitialized: true }));
 
-let Users = [{'login': 'admin', 'email':'Aks-fam@yandex.ru'},
-            {'login': 'local_js_god', 'email':'ilia-gossoudarev@yandex.ru'},
-            {'login': 'kunica', 'email':'skunicyna@yandex.ru'},
-            {'login': 'kunica2', 'email':'s.kunica97@gmail.com'}];
+let Users = [{'login': 'admin', 'email':'admin@yandex.ru'},
+            {'login': 'user1', 'email':'user1@yandex.ru'},
+            {'login': 'user2', 'email':'user2@yandex.ru'},
+            {'login': 'user3', 'email':'user3@gmail.com'}];
 
 const findUserByLogin = (login) => {
     return Users.find((element)=> {
